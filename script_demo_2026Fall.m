@@ -42,6 +42,10 @@
 % 2026_09_29 by Sean Brennan, sbrennan@psu.edu
 % - In script_demo_2026Fall.m
 %   % * Added VehicleSimulations_ChassisModels_VDClass library
+%
+% 2026_10_06 by Sean Brennan, sbrennan@psu.edu
+% - In script_demo_2026Fall.m
+%   % * Added quizzes up to 11
 
 % TO-DO:
 % - 2026_08_24 by Sean Brennan, sbrennan@psu.edu
@@ -233,10 +237,10 @@ scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week0
 scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week01_Quiz03_Syllabus',false);
 
 % Run Week02_Quiz04_NumericalSimICs?
-scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week02_Quiz04_NumericalSimICs',true);
+scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week02_Quiz04_NumericalSimICs',false);
 
 % Run Week02_Quiz05_NumericalSimDeltaTs?
-scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week02_Quiz05_NumericalSimDeltaTs',true);
+scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week02_Quiz05_NumericalSimDeltaTs',false);
 
 % Run script_Week02_HW1_InitialsViaGPS?
 scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week02_HW1_InitialsViaGPS',true);
@@ -252,6 +256,19 @@ scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week0
 
 % Run Week04_HW3_RungeKuttaKinematics?
 scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week04_HW3_RungeKuttaKinematics',true);
+
+% Run Week04_Quiz08_AckermanSteeringAngle?
+scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week04_Quiz08_AckermanSteeringAngle',true);
+
+% Run Week04_Quiz09_HighSpeedSteadyState?
+scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week04_Quiz09_HighSpeedSteadyState',true);
+
+% Run Week04_Quiz10_UndersteerCurves?
+scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week04_Quiz10_UndersteerCurves',true);
+
+% Run Week04_Quiz11_CriticalSpeedQuestions?
+scriptToRun = fcn_INTERNAL_checkIfStudentAlreadyDidAssignment(scriptToRun,'Week04_Quiz11_CriticalSpeedQuestions',true);
+
 
 if ~isempty(scriptToRun)
 	fprintf(1,'\nIt appears that the following script needs to run: \n%s\n',scriptToRun);
